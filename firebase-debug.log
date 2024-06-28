@@ -1,0 +1,155 @@
+[debug] [2024-06-25T22:02:21.553Z] ----------------------------------------------------------------------
+[debug] [2024-06-25T22:02:21.563Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-06-25T22:02:21.566Z] CLI Version:   13.11.3
+[debug] [2024-06-25T22:02:21.566Z] Platform:      win32
+[debug] [2024-06-25T22:02:21.566Z] Node Version:  v21.6.1
+[debug] [2024-06-25T22:02:21.568Z] Time:          Wed Jun 26 2024 01:02:21 GMT+0300 (East Africa Time)
+[debug] [2024-06-25T22:02:21.568Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-25T22:02:21.575Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-06-25T22:02:21.693Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-25T22:02:21.694Z] > authorizing via signed-in user (in.finiteitu@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Admin\Desktop\StackUp-ThreeJS
+
+[debug] [2024-06-25T22:02:22.365Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-06-25T22:02:22.366Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-06-25T22:06:11.748Z] > refreshing access token with scopes: []
+[debug] [2024-06-25T22:06:11.750Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-06-25T22:06:11.751Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-06-25T22:06:12.368Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-06-25T22:06:12.368Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-06-25T22:06:12.385Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-06-25T22:06:12.385Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"4hunnid-threejs-intro","name":"4hunnid-threejs-intro"}
+[debug] [2024-06-25T22:06:14.325Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2024-06-25T22:06:14.325Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"field [project_id] has issue [project_id contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2024-06-25T22:06:14.745Z] FirebaseError: HTTP Error: 400, field [project_id] has issue [project_id contains invalid characters]
+    at responseToError (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2024-06-25T22:07:21.181Z] ----------------------------------------------------------------------
+[debug] [2024-06-25T22:07:21.187Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-06-25T22:07:21.188Z] CLI Version:   13.11.3
+[debug] [2024-06-25T22:07:21.189Z] Platform:      win32
+[debug] [2024-06-25T22:07:21.189Z] Node Version:  v21.6.1
+[debug] [2024-06-25T22:07:21.190Z] Time:          Wed Jun 26 2024 01:07:21 GMT+0300 (East Africa Time)
+[debug] [2024-06-25T22:07:21.190Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-25T22:07:21.208Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-25T22:07:21.209Z] > authorizing via signed-in user (in.finiteitu@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Admin\Desktop\StackUp-ThreeJS
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-06-25T22:08:28.774Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-06-25T22:08:28.775Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"hunnid24-threejs-intro","name":"hunnid24"}
+[debug] [2024-06-25T22:08:30.804Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2024-06-25T22:08:30.805Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.9095312976137518034"}
+[debug] [2024-06-25T22:08:30.807Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9095312976137518034 [none]
+[debug] [2024-06-25T22:08:32.481Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9095312976137518034 200
+[debug] [2024-06-25T22:08:32.481Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9095312976137518034 {"name":"operations/cp.9095312976137518034"}
+[debug] [2024-06-25T22:08:32.990Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-06-25T22:08:32.991Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9095312976137518034 [none]
+[debug] [2024-06-25T22:08:33.484Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9095312976137518034 200
+[debug] [2024-06-25T22:08:33.484Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9095312976137518034 {"name":"operations/cp.9095312976137518034","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2024-06-25T22:08:34.489Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-06-25T22:08:34.491Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9095312976137518034 [none]
+[debug] [2024-06-25T22:08:34.999Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9095312976137518034 200
+[debug] [2024-06-25T22:08:35.000Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9095312976137518034 {"name":"operations/cp.9095312976137518034","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"877218506539","projectId":"hunnid24-threejs-intro","lifecycleState":"ACTIVE","name":"hunnid24","createTime":"2024-06-25T22:08:32.913122Z"}}
+[debug] [2024-06-25T22:08:35.003Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/hunnid24-threejs-intro:addFirebase [none]
+[debug] [2024-06-25T22:08:36.549Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/hunnid24-threejs-intro:addFirebase 403
+[debug] [2024-06-25T22:08:36.550Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/hunnid24-threejs-intro:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-06-25T22:08:36.552Z] HTTP Error: 403, The caller does not have permission
+[debug] [2024-06-25T22:08:36.991Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
+[debug] [2024-06-25T22:15:24.546Z] ----------------------------------------------------------------------
+[debug] [2024-06-25T22:15:24.559Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-06-25T22:15:24.560Z] CLI Version:   13.11.3
+[debug] [2024-06-25T22:15:24.560Z] Platform:      win32
+[debug] [2024-06-25T22:15:24.560Z] Node Version:  v21.6.1
+[debug] [2024-06-25T22:15:24.562Z] Time:          Wed Jun 26 2024 01:15:24 GMT+0300 (East Africa Time)
+[debug] [2024-06-25T22:15:24.562Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-25T22:15:24.581Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-25T22:15:24.582Z] > authorizing via signed-in user (in.finiteitu@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Admin\Desktop\StackUp-ThreeJS
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-06-25T22:16:29.335Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-06-25T22:16:29.335Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"hunnid4-threejs-intro","name":"hunnid4-threejs-intro"}
+[debug] [2024-06-25T22:16:31.509Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2024-06-25T22:16:31.510Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.8996684273209624608"}
+[debug] [2024-06-25T22:16:31.513Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8996684273209624608 [none]
+[debug] [2024-06-25T22:16:33.172Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8996684273209624608 200
+[debug] [2024-06-25T22:16:33.173Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8996684273209624608 {"name":"operations/cp.8996684273209624608"}
+[debug] [2024-06-25T22:16:33.678Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-06-25T22:16:33.681Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8996684273209624608 [none]
+[debug] [2024-06-25T22:16:34.124Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8996684273209624608 200
+[debug] [2024-06-25T22:16:34.124Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8996684273209624608 {"name":"operations/cp.8996684273209624608","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2024-06-25T22:16:35.129Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-06-25T22:16:35.129Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8996684273209624608 [none]
+[debug] [2024-06-25T22:16:35.577Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8996684273209624608 200
+[debug] [2024-06-25T22:16:35.577Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8996684273209624608 {"name":"operations/cp.8996684273209624608","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"351746215638","projectId":"hunnid4-threejs-intro","lifecycleState":"ACTIVE","name":"hunnid4-threejs-intro","createTime":"2024-06-25T22:16:33.547716Z"}}
+[debug] [2024-06-25T22:16:35.581Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/hunnid4-threejs-intro:addFirebase [none]
+[debug] [2024-06-25T22:16:37.291Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/hunnid4-threejs-intro:addFirebase 403
+[debug] [2024-06-25T22:16:37.292Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/hunnid4-threejs-intro:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-06-25T22:16:37.294Z] HTTP Error: 403, The caller does not have permission
+[debug] [2024-06-25T22:16:37.859Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
